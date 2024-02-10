@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobby of Haircutting</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="shortcut icon" type="x-icon" href="~/image/tools.jpg" />
+    <link href="~/css/site.css" rel="stylesheet" />
+    <script src="~/js/tutoringcalculator.js"></script>
+    <style>
+        html {
+            height: 100%;
+            box-sizing: border-box;
+        }
+        body {
+            position:relative;
+            margin: 0;
+            min-height: 100%;
+            padding-bottom: 6.74rem;
+            box-sizing: inherit;
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-4">
+                    <div class="navbar__logo">
+                        <a href="#" class="flex items-center py-5 px-2 text-gray-700 hover:text-gray-900">
+                            <span class="font-bold">SKY SONG</span>
+                        </a>
+                    </div>
+                    <div class="hidden md:flex items-center space-x-1">
+                        <a href="~/Home/Index" class="py-5 px-10 text-gray-700 hover:text-gray-900">Home</a>
+                        <a href="~/Home/Calculator" class="py-5 px-3 text-gray-700 hover:text-gray-900">Tutoring</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+     @RenderBody()
+
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="mx-auto text-center">
+            <p>&copy; 2024 by Sky Song. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/js/tutoringCalculator.js"></script>
+
+</html>
